@@ -1,0 +1,23 @@
+// Use all Carbon themes
+@use '@carbon/styles/scss/config' with (
+  $use-akamai-cdn: true,
+  $use-flexbox-grid: true,
+  $prefix: 'bx'
+);
+@use "@carbon/styles" as styles;
+
+:root {
+  @include styles.theme(styles.$white);
+}
+
+[theme='g10'] {
+  @include styles.theme(styles.$g10);
+}
+
+[theme='g90'] {
+  @include styles.theme(styles.$g90);
+}
+
+[theme='g100'] {
+  @include styles.theme(styles.$g100);
+}

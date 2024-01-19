@@ -27,7 +27,6 @@
   const themes = {
     white: "White",
     g10: "Gray 10",
-    g80: "Gray 80",
     g90: "Gray 90",
     g100: "Gray 100",
     all: "All",
@@ -35,7 +34,7 @@
 
   const cssImportAll = `import "carbon-components-svelte/css/all.css";`;
   const cssThemeToggle = `<script>
-  let theme = "${$theme}"; // "white" | "g10" | "g80" | "g90" | "g100"
+  let theme = "${$theme}"; // "white" | "g10" | "g90" | "g100"
 
   $: document.documentElement.setAttribute("theme", theme);
 <\/script>
@@ -130,7 +129,7 @@
           legendText="Carbon themes"
           bind:selected="{$theme}"
         >
-          {#each ["white", "g10", "g80", "g90", "g100"] as value}
+          {#each ["white", "g10", "g90", "g100"] as value}
             <RadioButton labelText="{themes[value]}" value="{value}" />
           {/each}
         </RadioButtonGroup>

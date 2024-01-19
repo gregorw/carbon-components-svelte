@@ -5,7 +5,7 @@
    */
 
   /**
-   * @typedef {"white" | "g10" | "g80" | "g90" | "g100"} CarbonTheme
+   * @typedef {"white" | "g10" | "g90" | "g100"} CarbonTheme
    * @event {{ theme: CarbonTheme; }} update
    * @slot {{ theme: CarbonTheme; }}
    */
@@ -51,7 +51,6 @@
   const themes = {
     white: "White",
     g10: "Gray 10",
-    g80: "Gray 80",
     g90: "Gray 90",
     g100: "Gray 100",
   };

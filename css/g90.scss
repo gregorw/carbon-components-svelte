@@ -1,0 +1,10 @@
+@use '@carbon/styles/scss/config' with (
+  $use-akamai-cdn: true,
+  $use-flexbox-grid: true,
+  $prefix: 'bx'
+);
+@use "@carbon/styles" as styles;
+
+:root {
+  @include styles.theme(styles.$g90);
+}
